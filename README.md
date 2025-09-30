@@ -3,7 +3,7 @@
 ### W1
 Write your W1 activity Devlog here.
 
-"Hello World!"
+Navigating through Github and Unity was tough. There were so many words and the interface seemed overwhelming. I'm hoping that after this quarter, I can get used to the process and make a fun game out of it. Changing the scene by moving the cat and putting it on the green platform, as well as moving the camera into first-person of the cat was really fun.
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
