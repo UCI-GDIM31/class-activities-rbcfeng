@@ -15,6 +15,12 @@ A semicolon was missing, so the statement couldn't finish.
 
 ### W3
 
+I would put the parameters to be a int variable for the friendship level, and a bool variable for the flag of the character's secret. The return type would be a string variable for the dialogue of the character.
+
+### W4
+
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
