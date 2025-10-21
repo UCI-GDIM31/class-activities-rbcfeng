@@ -22,6 +22,10 @@ I would put the parameters to be a int variable for the friendship level, and a 
 Table #11
 Line 17 describes IsGrounded as a bool member variable is true, line 28 describes an if statement in the condition where if the player is on the ground and pressing space, and line 32 describes the bool member variable IsGrounded to equal false. All together, the lines might mean that when the player presses the Space key and is on the ground, the player will jump, causing it to not be on the ground.
 
+
+1. Only the Goal gameObject has Is Trigger checked because it doesn't need to move around since it would be triggered when something collides with it. The Cat and SoccerBall gameObjects will need to have Rigidbodies because they have to be moving around and colliding with each other to collide with the Goal gameObject to receive points.
+2. The Cat gameObject was slightly off the ground when I ran the game, but I figured out that the Capsule Collider was slightly beneath the ground, which meant that there would be an "invisible" part of the cat that lifted it slightly and collided with the ground.
+
 ### W5
 
 
