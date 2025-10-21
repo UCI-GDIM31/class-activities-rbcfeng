@@ -19,6 +19,11 @@ I would put the parameters to be a int variable for the friendship level, and a 
 
 ### W4
 
+Table #11
+Line 17 describes IsGrounded as a bool member variable is true, line 28 describes an if statement in the condition where if the player is on the ground and pressing space, and line 32 describes the bool member variable IsGrounded to equal false. All together, the lines might mean that when the player presses the Space key and is on the ground, the player will jump, causing it to not be on the ground.
+
+### W5
+
 
 
 ## Open-Source Assets
