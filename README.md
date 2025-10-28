@@ -28,6 +28,10 @@ Line 17 describes IsGrounded as a bool member variable is true, line 28 describe
 
 ### W5
 
+In what situation would we need to put code in the parentheses of GetComponent();?
+You would need to fill in the parentheses with the type parameter if you want to specify the type of component that you want to retrieve.
+
+### W6
 
 
 ## Open-Source Assets
