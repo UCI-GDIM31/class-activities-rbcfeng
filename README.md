@@ -31,6 +31,8 @@ Line 17 describes IsGrounded as a bool member variable is true, line 28 describe
 In what situation would we need to put code in the parentheses of GetComponent();?
 You would need to fill in the parentheses with the type parameter if you want to specify the type of component that you want to retrieve.
 
+We will need a Navmesh member varaible and the target member variable. The methods we would need would be the Start() method because the deer has to check and set the target at the beginning of the game, which includes getting the Navmesh component so the deer can navigate towards the target.
+
 ### W6
 
 
