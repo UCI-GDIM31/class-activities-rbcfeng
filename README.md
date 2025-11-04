@@ -35,6 +35,10 @@ We will need a Navmesh member varaible and the target member variable. The metho
 
 ### W6
 
+I added resources for the General C# Coding category. [Google Doc Group #11 Outline GDIM 31 Topics](https://docs.google.com/document/d/1jGkW1Q2xP_713KL3rIzM0yPQ_F7CGMHJ1AHQlTPs5pg/edit?tab=t.0)
+
+Pair Programming Notes:
+This class needs bool member variable to check if the bats are moving and a float member variable for the speed of the bats, and the Start() and Update() method to make the bats start chasing the player as the game begins and update the current distance between the bats and the player. The Update() method will also be used to make the bat stop chasing the player and a new bat to start chasing it.
 
 ## Open-Source Assets
 ### W1
