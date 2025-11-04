@@ -12,14 +12,14 @@ public class BatManager : MonoBehaviour
     // STEP 1 -----------------------------------------------------------------
     // Add a member variable named "_bats" that's an array of BatW6 Components.
     // In the Inspector, add ALL of the bats in the Scene.
-    
+    [SerializeField] private BatW6[] _bats;
     // STEP 1 -----------------------------------------------------------------
 
     // STEP 3 -----------------------------------------------------------------
     // Add a member variable named "_messages" that's an array of strings.
     // In the Inspector, add at least a few different messages for the bats to
     //      say when they reach the player.
-    
+    [SerializeField] private string _messages;
     // STEP 3 -----------------------------------------------------------------
 
     [SerializeField] private float[] _newTextTimers;
@@ -38,7 +38,7 @@ public class BatManager : MonoBehaviour
         // That means the bat at _bats[0] has a timer at _newTextTimers[0],
         //      the bat at _bats[1] has a timer at _newTextTimers[1],
         //      and so on.
-        // _newTextTimers = new [_bats.Length];
+        //_newTextTimers[] = new [_bats.Length];
         // STEP 6 -------------------------------------------------------------
     }
 
@@ -68,12 +68,26 @@ public class BatManager : MonoBehaviour
         // Also inside this for loop, if the distance between the bat and the
         //      player is less than _overlapDistance, call CreateReactions()
         //      and pass the bat in as an argument.
-        
+        for (int i = 0; i < _bats.Length; i++)
+        {
+            BatW6 bat = _bats[i];
+            if (Vector3.Distance(bat.transform.position, _playerTransform.position) <= _interactDistance)
+            {
+                bat.EnableChase(_playerTransform);
+            }
+           // else if (Vector3.Distance(bat.transform.position, _playerTransform.position) < _overlapDistance)
+           // {
+          //      CreateReactions(bat);
+           // }
+            else
+            {
+                bat.DisableChase();
+            }
+        }
 
+                    // STEP 2 -------------------------------------------------------------
 
-        // STEP 2 -------------------------------------------------------------
-
-    }
+                }
 
     // ------------------------------------------------------------------------
     private void CreateReactions(BatW6 bat)
