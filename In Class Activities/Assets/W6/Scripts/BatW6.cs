@@ -5,12 +5,12 @@ using UnityEngine.UIElements;
 public class BatW6 : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    private Transform _playertransform;
+    private Transform _playerTransform;
 
     public void EnableChase(Transform player)
     {
         enabled = true;
-        _playertransform = player;
+        _playerTransform = player;
     }
 
     public void DisableChase()
@@ -20,7 +20,7 @@ public class BatW6 : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _playertransform.position, _speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _playerTransform.position, _speed * Time.deltaTime);
     }
 
 

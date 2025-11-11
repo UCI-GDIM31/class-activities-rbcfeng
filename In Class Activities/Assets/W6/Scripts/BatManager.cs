@@ -20,6 +20,7 @@ public class BatManager : MonoBehaviour
     // In the Inspector, add at least a few different messages for the bats to
     //      say when they reach the player.
     [SerializeField] private string _messages;
+    private int _messagesIndex;
     // STEP 3 -----------------------------------------------------------------
 
     [SerializeField] private float[] _newTextTimers;
@@ -75,11 +76,11 @@ public class BatManager : MonoBehaviour
             {
                 bat.EnableChase(_playerTransform);
             }
-           // else if (Vector3.Distance(bat.transform.position, _playerTransform.position) < _overlapDistance)
-           // {
-          //      CreateReactions(bat);
-           // }
-            else
+            else if (Vector3.Distance(bat.transform.position, _playerTransform.position) < _overlapDistance)
+            {
+                CreateReactions(bat);
+            }
+           else
             {
                 bat.DisableChase();
             }
@@ -106,7 +107,7 @@ public class BatManager : MonoBehaviour
         //
         // The first argument to SpawnReactionUI is same bat in the parameters
         //      of CreateReactions.
-        
+        //string randomMessage = Random.Range(_messagesIndex);
         // STEP 5 -------------------------------------------------------------
     }
 
