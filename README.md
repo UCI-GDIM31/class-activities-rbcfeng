@@ -40,6 +40,12 @@ I added resources for the General C# Coding category. [Google Doc Group #11 Outl
 Pair Programming Notes:
 This class needs bool member variable to check if the bats are moving and a float member variable for the speed of the bats, and the Start() and Update() method to make the bats start chasing the player as the game begins and update the current distance between the bats and the player. The Update() method will also be used to make the bat stop chasing the player and a new bat to start chasing it.
 
+### W7
+
+https://docs.google.com/document/d/1tP76vpdvqVFgg7NrHrj0tOCw1tf_d0Ft6UOzOWAW50Q/edit?usp=sharing
+
+The error in Step two was that the code used transform.position, which is for world space, but it should be for local so that the muskrat gameObject can actually move relative to itself, which means that the code would have to use transform.Translate();.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
